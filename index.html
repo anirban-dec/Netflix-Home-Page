@@ -14,6 +14,864 @@
 
     font-family: 'Roboto', sans-serif; -->
     <link rel="stylesheet" href="https://use.fontawesome.com/a34asdfsd.js.">
+    <style>/* RESET  */
+body {
+    background-color: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Alegreya Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+.logo img {
+    height: 8.25rem;
+    width: 12.375rem;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.banner:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 400px;
+    z-index: 1;
+    background: linear-gradient(to bottom, black, transparent);
+}
+
+.banner:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 400px;
+    z-index: 1;
+    background: linear-gradient(to top, black, transparent);
+}
+
+.banner .fit {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+
+}
+
+.banner-heading {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    color: white;
+}
+
+.banner-heading .heading h2 {
+    font-size: 3rem;
+    text-align: center;
+    max-width: 640px;
+    font-weight: 550;
+    line-height: 1.1;
+}
+
+.banner-heading .heading h5 {
+    font-size: 1.625rem;
+    text-align: center;
+    font-weight: 200;
+    margin: 1rem auto;
+    max-width: 640px;
+}
+
+.banner-heading .heading p {
+    font-size: 1.2rem;
+    max-width: none;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    padding: 0 2%;
+    text-align: center;
+}
+
+.banner-heading .getstarted {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.banner-heading .getstarted input {
+    font-size: 16px;
+    border: 2px solid rgb(68, 67, 67);
+    outline: none;
+    color: black;
+    border-radius: 4px;
+    padding: 10px 10px 0 0;
+    min-width: 400px;
+    height: 60px;
+
+    padding-left: 10px;
+    padding-top: 3px;
+    font-family: 'Alegreya Sans', sans-serif;
+
+}
+
+.banner-heading .getstarted a {
+    text-decoration: none;
+
+
+    color: white;
+    font-weight: 400;
+    letter-spacing: .1px;
+    border-radius: 2px;
+    background: red;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+    font-size: 1.4rem;
+    line-height: 60px;
+    min-width: 204px;
+    padding: 0 30px;
+
+}
+
+.container .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    z-index: 10;
+    padding: 0 40px;
+}
+
+.container .logo a {
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 3px;
+    padding: 7px 17px;
+    margin: 0 20px;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+.container .logo label {
+    margin: auto;
+
+
+}
+
+.container .logo select {
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 3px;
+    padding: 4px 2px;
+    margin: 0 0px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.container .logo option {
+    background-color: black;
+}
+
+/* PAGE 1 */
+
+.page1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 8px solid rgb(61, 61, 61);
+    border-bottom: 8px solid rgb(61, 61, 61);
+    background-color: black;
+}
+
+.page1 .text {
+
+    width: 40%;
+    color: white;
+}
+
+.page1 .text h1 {
+    font-size: 3.125rem;
+    line-height: 1.1;
+    margin-bottom: .5rem;
+}
+
+.page1 .text p {
+    font-size: 1.625rem;
+    margin: .75rem 0 .25rem;
+}
+
+.page1 .image {
+    width: 45%;
+
+
+}
+
+.page1 .image img {
+    position: relative;
+    height: auto;
+    max-width: 100%;
+}
+
+
+
+
+
+
+
+
+/* PAGE 2 */
+
+
+.page2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* border-top: 8px solid rgb(61, 61, 61); */
+    border-bottom: 8px solid rgb(61, 61, 61);
+    background-color: black;
+}
+
+.page2 .text {
+
+    width: 40%;
+    color: white;
+}
+
+.page2 .text h1 {
+    font-size: 3.125rem;
+    line-height: 1.1;
+    margin-bottom: .5rem;
+}
+
+.page2 .text p {
+    font-size: 1.625rem;
+    margin: .75rem 0 .25rem;
+}
+
+.page2 .image {
+    width: 45%;
+
+
+}
+
+.page2 .image img {
+    position: relative;
+    height: auto;
+    max-width: 100%;
+}
+
+
+
+/* PAGE 3 */
+
+
+.page3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* border-top: 8px solid rgb(61, 61, 61); */
+    border-bottom: 8px solid rgb(61, 61, 61);
+    background-color: black;
+    height: 28rem;
+}
+
+.page3 .text {
+
+    width: 40%;
+    color: white;
+}
+
+.page3 .text h1 {
+    font-size: 3.125rem;
+    line-height: 1.1;
+    margin-bottom: .5rem;
+}
+
+.page3 .text p {
+    font-size: 1.625rem;
+    margin: .75rem 0 .25rem;
+}
+
+.page3 .image {
+    width: 45%;
+
+
+}
+
+.page3 .image img {
+    position: relative;
+    height: auto;
+    max-width: 100%;
+    /* margin-top: 200px; */
+}
+
+
+/* PAGE 4 */
+
+
+.page4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* border-top: 8px solid rgb(61, 61, 61); */
+    border-bottom: 8px solid rgb(61, 61, 61);
+    background-color: black;
+
+
+}
+
+.page4 .text {
+
+    width: 40%;
+    color: white;
+}
+
+.page4 .text h1 {
+    font-size: 3.125rem;
+    line-height: 1.1;
+    margin-bottom: .5rem;
+}
+
+.page4 .text p {
+    font-size: 1.625rem;
+    margin: .75rem 0 .25rem;
+}
+
+.page4 .image {
+    width: 45%;
+
+
+}
+
+.page4 .image img {
+    position: relative;
+    height: auto;
+    max-width: 100%;
+    /* margin-top: 200px; */
+}
+
+
+
+.faq {
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 72px 42px;
+    color: white;
+    border-bottom: 8px solid rgb(61, 61, 61);
+    ;
+
+
+}
+
+.faq h1 {
+
+    font-size: 3.125rem;
+    line-height: 1.1;
+    margin-bottom: .5rem;
+}
+
+.question {
+    font-weight: 400;
+    margin: 2em auto;
+    width: 75%;
+}
+
+.question-menu {
+    width: 60%;
+}
+
+.faq1 {
+    background-color: #303030;
+    padding: .8em 2.2em .8em 1.2em;
+    font-weight: 400;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 1.625rem;
+    text-decoration: none;
+    margin-bottom: 1px;
+}
+
+.icon {
+    width: 20px;
+    position: relative;
+}
+
+.icon::before,
+.icon::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    background: white;
+    top: -1.5px;
+}
+
+.icon::after {
+    transform: rotate(90deg);
+    transition: .5s;
+}
+
+.question:target .icon::after {
+    transform: rotateY(90deg);
+
+}
+
+
+.ans {
+    background-color: #303030;
+    margin: 3px 0;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 400;
+    height: 0;
+    opacity: 0;
+
+}
+
+.question:target .ans {
+    opacity: 1;
+    height: auto;
+    padding: 20px 30px;
+    border-top: 2px solid black;
+
+
+}
+
+
+.getstarted2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.heading2 {
+    margin-top: 34px;
+}
+
+.heading2 p {
+    font-size: 1.2rem;
+    max-width: none;
+    padding-bottom: 20px;
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.getstarted2 input {
+    font-size: 16px;
+    border: 2px solid rgb(68, 67, 67);
+    outline: none;
+    color: black;
+    border-radius: 4px;
+    padding: 10px 10px 0 0;
+    min-width: 453px;
+    height: 60px;
+
+    padding-left: 10px;
+    padding-top: 3px;
+    font-family: 'Alegreya Sans', sans-serif;
+
+}
+
+.getstarted2 a {
+    text-decoration: none;
+
+
+    color: white;
+    font-weight: 400;
+    letter-spacing: .1px;
+    border-radius: 2px;
+    background: red;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+    font-size: 1.4rem;
+    line-height: 60px;
+    min-width: 204px;
+    padding: 0 30px;
+
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    padding: 4rem 0;
+}
+
+.footer-items li a {
+    text-decoration: none;
+    color: #737373;
+    font-size: 13px;
+
+}
+
+.footer .fone {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 2px;
+    width: 100%;
+
+
+}
+
+.footer .fone li a:hover {
+    border-bottom: .1px solid#737373;
+
+}
+
+.footer-info {
+    display: flex;
+    color: white;
+    justify-content: left;
+    align-items: center;
+    list-style: none;
+    margin-top: 50px;
+    margin-left: 165px;
+
+}
+
+.footer-info li a {
+    text-decoration: none;
+    color: #737373;
+    ;
+}
+
+.container2 label {
+    margin: auto;
+
+
+}
+
+.container2 select {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 3px;
+    padding: 4px 2px;
+    margin: 0 189px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+
+
+/* RESPONSIVE  */
+
+@media screen and (max-width:790px) {
+    .logo img {
+        height: 14.25rem;
+        width: 20.375rem;
+        margin-bottom: 20px;
+    }
+
+    .container .logo {
+        padding: 20px 40px;
+    }
+
+    .banner-heading .heading h2 {
+        font-size: 2rem;
+        text-align: center;
+        width: 100%;
+        margin-top: 90px;
+
+    }
+
+    .banner-heading .heading h5 {
+        font-size: 1.3rem;
+
+        width: 100%;
+    }
+
+    .banner-heading .heading p {
+        font-size: 1rem;
+
+        font-weight: bold;
+        padding: 13px 0;
+        padding-bottom: 17px;
+
+
+    }
+
+    .banner-heading .getstarted {
+
+        flex-direction: column;
+
+
+    }
+
+    .banner-heading .getstarted input {
+
+        min-width: 300px;
+        margin-bottom: 20px;
+
+
+    }
+
+
+    .banner-heading .getstarted a {
+        padding: 0 80px;
+
+    }
+
+    .page1 {
+
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .page1 .text {
+
+        width: 80%;
+
+        text-align: center;
+    }
+
+    .page1 .text h1 {
+        font-size: 3rem;
+        margin: 10px;
+    }
+
+    .page1 .text p {
+        font-size: 1.2rem;
+
+    }
+
+    .page1 .image {
+        width: 70%;
+        margin-top: 20px;
+
+
+    }
+
+
+
+
+
+    .page2 {
+
+        flex-direction: column;
+        justify-content: center;
+
+
+    }
+
+    .page2 .text {
+
+        width: 80%;
+
+        text-align: center;
+    }
+
+    .page2 .text h1 {
+        font-size: 3rem;
+        margin: 10px;
+    }
+
+    .page2 .text p {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+
+    }
+
+    .page2 .image {
+        width: 70%;
+        margin-bottom: 20px;
+
+
+    }
+
+    .page3 {
+
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .page3 .text {
+
+        width: 80%;
+
+        text-align: center;
+    }
+
+    .page3 .text h1 {
+        font-size: 3rem;
+        margin: 20px;
+    }
+
+    .page3 .text p {
+        font-size: 1.2rem;
+
+    }
+
+    .page3 .image {
+        width: 70%;
+        margin-top: 20px;
+
+
+    }
+
+    .page4 {
+
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .page4 .text {
+
+        width: 80%;
+
+        text-align: center;
+    }
+
+    .page4 .text h1 {
+        font-size: 3rem;
+        margin: 20px;
+    }
+
+    .page4 .text p {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+
+    }
+
+    .page4 .image {
+        width: 70%;
+        margin-bottom: 20px;
+
+
+    }
+
+
+
+
+    .faq {
+
+
+        /* margin: auto; */
+        /* padding: 72px 42px; */
+
+        color: white;
+        border-bottom: 8px solid rgb(61, 61, 61);
+
+
+    }
+
+    .faq h1 {
+
+        font-size: 3rem;
+        text-align: center;
+
+    }
+
+    .question {
+
+        width: 80%;
+    }
+
+    .question-menu {
+        width: 80%;
+    }
+
+
+    .container .logo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        z-index: 10;
+        padding: 0 40px;
+        flex-direction: column;
+    }
+
+    .container .logo a {
+        margin-bottom: 20px;
+
+    }
+
+    .getstarted2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+    .heading2 p {
+        font-size: 1.2rem;
+        width: 100%;
+
+        margin: 20px;
+        text-align: center;
+    }
+
+    .getstarted2 input {
+
+        min-width: 100%;
+
+
+    }
+
+    .getstarted2 a {
+        min-width: 100%;
+        padding: 0 47px;
+
+    }
+
+
+
+}
+
+ </style>
 </head>
 
 <body>
